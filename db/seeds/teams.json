@@ -1,0 +1,102 @@
+[
+  {
+    "id": 239,
+    "school": "Baylor",
+    "mascot": "Bears",
+    "abbreviation": "BAY",
+    "conference": "Big 12",
+    "division": null,
+    "color": "#004834",
+    "alt_color": "#ffb81c"
+  },
+  {
+    "id": 66,
+    "school": "Iowa State",
+    "mascot": "Cyclones",
+    "abbreviation": "ISU",
+    "conference": "Big 12",
+    "division": null,
+    "color": "#660015",
+    "alt_color": "#830b2c"
+  },
+  {
+    "id": 2305,
+    "school": "Kansas",
+    "mascot": "Jayhawks",
+    "abbreviation": "KU",
+    "conference": "Big 12",
+    "division": null,
+    "color": "#0022B4",
+    "alt_color": "#e8000d"
+  },
+  {
+    "id": 2306,
+    "school": "Kansas State",
+    "mascot": "Wildcats",
+    "abbreviation": "KSU",
+    "conference": "Big 12",
+    "division": null,
+    "color": "#633194",
+    "alt_color": "#e7d2ad"
+  },
+  {
+    "id": 201,
+    "school": "Oklahoma",
+    "mascot": "Sooners",
+    "abbreviation": "OKLA",
+    "conference": "Big 12",
+    "division": null,
+    "color": "#7b0000",
+    "alt_color": "#cccccc"
+  },
+  {
+    "id": 197,
+    "school": "Oklahoma State",
+    "mascot": "Cowboys",
+    "abbreviation": "OKST",
+    "conference": "Big 12",
+    "division": null,
+    "color": "#FF6500",
+    "alt_color": "#ff9900"
+  },
+  {
+    "id": 2628,
+    "school": "TCU",
+    "mascot": "Horned Frogs",
+    "abbreviation": "TCU",
+    "conference": "Big 12",
+    "division": null,
+    "color": "#3C377D",
+    "alt_color": "#f1f2f3"
+  },
+  {
+    "id": 251,
+    "school": "Texas",
+    "mascot": "Longhorns",
+    "abbreviation": "TEX",
+    "conference": "Big 12",
+    "division": null,
+    "color": "#EE7524",
+    "alt_color": "#f0f0f0"
+  },
+  {
+    "id": 2641,
+    "school": "Texas Tech",
+    "mascot": "Red Raiders",
+    "abbreviation": "TTU",
+    "conference": "Big 12",
+    "division": null,
+    "color": "#C80025",
+    "alt_color": "#231f20"
+  },
+  {
+    "id": 277,
+    "school": "West Virginia",
+    "mascot": "Mountaineers",
+    "abbreviation": "WVU",
+    "conference": "Big 12",
+    "division": null,
+    "color": "#FFC600",
+    "alt_color": "#eaaa00"
+  }
+]
