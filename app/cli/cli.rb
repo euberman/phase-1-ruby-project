@@ -61,24 +61,15 @@ end
 
 def games_by_team(team)
   games = Game.all.select do |game|
-    game_list = []
-    if game.home_team == team || game.away_team == team
-      game_list << game
-    end
-    print_games(game_list)
+    game.home_team == team || game.away_team == team
+  end
+    print_games(games)
   end
 end
 
 def print_games(games)
-  prompt = TTY::Prompt.new
-  input = prompt.select("Which event would you like to view?", named_events)
-  pastel = Pastel.new
-
   games.each do |game|
-    if event.name == input
-      puts "Home_Team: #{pastel.cyan(game.home_team)} Away_team: #{pastel.cyan(game.away_team)}, Venue: #{pastel.cyan(game.venue_name)}, Season: #{pastel.cyan("2019")}"
-      
-      break
-    end
+    puts "Home_Team: #{pastel.cyan(game.home_team)} Away_team: #{pastel.cyan(game.away_team)}, Venue: #{pastel.cyan(game.venue_name)}, Season: #{pastel.cyan("2019")}"
   end
+  team_menu()
 end
