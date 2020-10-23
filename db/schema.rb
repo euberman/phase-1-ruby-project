@@ -23,8 +23,4 @@ ActiveRecord::Schema.define(version: 2020_10_22_215632) do
     t.string "name"
   end
 
-  create_table "venues", force: :cascade do |t|
-    t.string "name"
-  end
-
 end
