@@ -2756,20 +2756,22 @@ games = [
     "excitement_index": "6.0843156736"
   }
 ]
-
-games.each do |game|
-  home_t = Team.find_or_create_by(name: game['home_team'] )
-  away_t = Team.find_or_create_by(name: game['away_team'] )
+games_list = JSON.parse(games)
+games_list.each do |game|
+  #home_t = Team.find_or_create_by(name: game['home_team'] )
+  #away_t = Team.find_or_create_by(name: game['away_team'] )
 
   venue = Venue.find_or_create_by(name: game['venue_name'])
   venue_id = venue['id']
   Game.create(
-    :home_id => game['home_id']
-    :home_team => game['home_team']
-    :away_id => game['away_id']
-    :away_team => game['away_team']
-    :venue_id => venue_id
-    :venue_name => game['venue_name']
+    home_id = game['home_id'],
+    home_team = game['home_team'],
+    home_points = game['home_points']
+    away_id = game['away_id'],
+    away_team = game['away_team'],
+    away_points = game['away_points']
+    venue_id = venue_id,
+    venue_name = game['venue_name']
   )
   
 end

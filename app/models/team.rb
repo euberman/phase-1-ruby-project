@@ -10,9 +10,4 @@ class Team < ActiveRecord::Base
     #return the number of games associated with the team
   end
   
-  def venue_count
-    self.venues.uniq.count
-    #return the number of venues associated with the team
-  end
-  
 end 
