@@ -9,3 +9,7 @@ gem "require_all"
 gem 'json'
 gem 'rest-client'
 gem 'rake'
+gem "tty-prompt"
+gem "database_cleaner"
+gem "tty-font"
+gem "pastel"
