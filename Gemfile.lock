@@ -13,6 +13,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (9.0.0)
+    awesome_print (1.8.0)
     coderay (1.1.3)
     concurrent-ruby (1.1.7)
     database_cleaner (1.8.5)
@@ -82,6 +83,8 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord (~> 5.2.3)
+  awesome_print
+  bundler
   database_cleaner
   json
   pastel

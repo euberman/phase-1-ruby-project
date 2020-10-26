@@ -10,13 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_22_215632) do
+ActiveRecord::Schema.define(version: 3) do
 
   create_table "games", force: :cascade do |t|
     t.integer "away_id"
+    t.string "away_team"
+    t.integer "away_points"
     t.integer "home_id"
+    t.string "home_team"
+    t.integer "home_points"
     t.integer "venue_id"
-    t.integer "season"
+    t.string "venue_name"
+    t.string "season"
+  end
+
+  create_table "matchups", force: :cascade do |t|
+    t.integer "team_id"
+    t.integer "game_id"
+    t.integer "team_points"
+    t.string "opponent_name"
+    t.string "opponent_points"
+    t.string "venue_name"
+    t.index ["game_id"], name: "index_matchups_on_game_id"
+    t.index ["team_id"], name: "index_matchups_on_team_id"
   end
 
   create_table "teams", force: :cascade do |t|

@@ -1,4 +1,5 @@
 require 'pry'
+require 'awesome_print'
 require_relative '../../config/environment.rb'
 
 def welcome
@@ -59,17 +60,18 @@ def team_menu
   end
 end
 
-def games_by_team(team)
-  games = Game.all.select do |game|
-    game.home_team == team || game.away_team == team
-  end
-    print_games(games)
-  end
+def games_by_team(team_name)
+  team = Team.first
+  games = Matchup.where('team_id', team.id)
+  # games = Game.all.select do |game|
+  #   game.home_team == team || game.away_team == team
+  # end
+  print_games(games)
 end
 
 def print_games(games)
-  games.each do |game|
-    puts "Home_Team: #{pastel.cyan(game.home_team)} Away_team: #{pastel.cyan(game.away_team)}, Venue: #{pastel.cyan(game.venue_name)}, Season: #{pastel.cyan("2019")}"
+  games.each do |matchup|
+    ap "Team: #{pastel.cyan(matchup.team.name)} Opponent: #{pastel.cyan(matchup.opponent_name)}, Venue: #{pastel.cyan(matchup.venue_name)}, Season: #{pastel.cyan('2019')}"
   end
   team_menu()
 end
